@@ -1,0 +1,271 @@
+body {
+   background-image:url("http://i.stack.imgur.com/kb0Zm.jpg");
+   
+}
+
+.img-left{
+ float: left; 
+ padding-right: 10px;
+/*  border: 1px solid black; */
+ margin-left: 12px;
+/*   width: 30%; */
+}
+
+.img-right{
+ float: right; 
+ padding-right: 10px; 
+
+}
+.grey-background {
+    border-left: 6px solid 	 #85a3cc;
+    background-color: lightgrey;
+    margin: 12px;
+    }
+
+
+
+.ridge {
+
+border-style: ridge;
+border-width: 10px;
+padding:4px;
+margin:10px;
+
+}
+
+
+.row {
+padding: 50px;
+display: flex;
+}
+
+.img-shadow{
+ border: 1px solid;
+ box-shadow:20px 20px 50px 15px #888888;
+}
+
+
+#txt {
+ width: 25em;  
+ word-wrap: break-word;
+ margin: 45px;
+ line-height: 1.6;
+ font-family: algeria;
+ font-size: 20px;
+/*   padding: 3px; */
+}
+
+.menu{
+ font-size: 25px;
+  position: relative;
+/*   left: 500px; */
+  left:150px;
+  border-radius: 25px;
+  border: 2px solid #349bff;
+  padding: 20px; 
+  width:1100px;
+  box-shadow:20px 20px 50px 15px grey;
+  margin-bottom: 60px;
+}
+.menu li {
+    padding: 10px;
+    margin-bottom: 7px;
+    margin-top: 17px;
+    color: #ffffff;
+    box-shadow: 10px 10px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   width:300px;
+}
+.menu li:hover {
+    background-color: lightblue;
+}
+
+
+
+   h3 {
+
+width: 1300px;
+background-color:  #1ac6ff;
+padding: 10px;
+box-shadow: 5px 10px  #b3edff;
+margin:10px;
+
+}
+
+
+/* fading CV text */
+
+@supports (mix-blend-mode: screen) {
+  h2 {
+    mix-blend-mode: screen;
+    position: relative;
+
+  }
+  h2::after {
+/*     background: -webkit-gradient, color-stop(3rem, #000)) no-repeat bottom center/100% 100%; */
+    background: linear-gradient(180deg, transparent, #000 3rem) no-repeat bottom center/100% 100%;
+/*     red, yellow, blue */
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+/*     -webkit-transition: 2.5s ease-out; */
+    transition: 2.5s ease-out;
+  }
+  h2:hover::after {
+    background-size: 100% 0%;
+  }
+}
+
+.wrap {
+  
+  background: url("https://i1.wp.com/beinglibertarian.com/wp-content/uploads/2016/10/che-guevara.jpg?w=1474&ssl=1") 00% 00%/cover;
+/*   display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+/*   -webkit-box-align: center; */
+/*   -ms-flex-align: center; */
+    align-items: center;
+  font: 28px/2.5 'Roboto',fantasy;
+/*   -webkit-box-pack: center; */
+/*   -ms-flex-pack: center; */
+  justify-content: center;
+  min-height: 160vh;
+  position: relative;
+  
+}
+.wrap::before {
+  background: #222;
+   content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+h1 {
+  
+ position:relative;
+  top:-80px;
+}
+
+.content {
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+h2{
+   font-family:  fantasy;
+}
+
+ h3 {
+width: 55em;
+background-color:  #1ac6ff;
+box-shadow: 5px 10px  #b3edff;
+text-align: center;
+padding: 10px;
+ }
+
+.border{
+   
+    width: 400px;
+    border-style: double;
+    border-width: 4px;
+    padding-bottom: 15px;
+    text-align: center;
+    float:left;
+    margin: 10px;
+}
+.quote{
+    font-family: fantasy;
+    font-size:16px;
+    float: right;
+    border-style: double;
+    border-width: 4px;
+    border-radius: 13px;
+    background-color: #f8f9fa;
+    padding:10px;
+    width: 25em;  
+    word-wrap: break-word;
+    margin: 15px;
+}
+
+/* p {
+  margin: 34px;
+  
+} */
+
+.word{
+ padding:20px;
+ width: 85em;  
+}
+
+
+#quote-1 { background: url(https://www.metoffice.gov.uk/binaries/content/gallery/mohippo/images/migrated-image/c/cirrus_clouds.jpg);
+  width:330px;
+  border: 2px solid grey;
+  border-radius:19px;
+  padding:22px;
+  color:white;
+  margin:30px;
+  font-family: Georgia;
+  font-size:18px;
+
+ 
+}
+
+#quote-2{
+  
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYtui1eNJ9C-fghf1SnKy9hikZuxJo5YX4K6L37-uNlwPGcU05 );
+  background-size:cover;
+  width:330px;
+  height:200px;
+  border: 2px solid grey;
+  margin:30px;
+  font-family: monospace;
+  font-size:20px;
+  padding:7px;
+}
+
+#quote-3 {
+  
+ background: url(https://media.swncdn.com/cms/CW/faith/13413-background-bible-wood-social.1200w.tn.jpg);
+   background-size:cover;
+  width:330px;
+  height:200px;
+  border: 2px solid grey;
+  border-radius:13px;
+  margin:30px;
+  font-family: time;
+  font-size:18px;
+  padding:7px;
+      
+}
+
+
+/* button quotes */
+.btn {
+    
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-left:550px;
+      
+    
+}
+
+.info {
+    color: dodgerblue;
+
+}
+
+.info:hover {
+    background: #2196F3;
+   
+}
