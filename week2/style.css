@@ -25,15 +25,10 @@
 
 
 
-  p {
-    font-family: Times, serif;
-}
+  p {font-family: Times, serif;}
  
-  h3{
+  h3{background-color:#d1f1f1;}
 
-   background-color:#d1f1f1;
-
-}
 
 .grid-item{
 
@@ -44,9 +39,7 @@
 
 }
 
-li{
-    list-style-type: none;
-}
+li {list-style-type: none;}
 
 #grid-floats li:nth-child(1) {
      width:580px;
@@ -65,11 +58,11 @@ li{
  #grid-floats li:nth-child(n+2):nth-child(-n+14){
         width: 285px;
         height:425px;
-        transition:transform 2s;
+        transition:width 2s,transform 2s;
     }
 
  #grid-floats li:nth-child(n+2):nth-child(-n+14):hover {
-   
+         width: 330px;
         transform: rotate(360deg);
     }
 
