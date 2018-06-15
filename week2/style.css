@@ -39,29 +39,32 @@
 
 }
 
+
 li {list-style-type: none;}
 
 #grid-floats li:nth-child(1) {
-     width:46%;
+  
+     width: calc(50% - 1.5em);
      height:430px; 
      transition: width 1s, height 1s;
     }
 
 #grid-floats li:nth-child(1):hover {
-    width: 60%;
-    height: 60%x;
+      width: 60%;
+      height: 60%;
 
    
 }
     
  #grid-floats li:nth-child(n+2):nth-child(-n+14){
-        width: 31%;
+        width: calc(25% - 1em);
         height:430px;
         transition:width 2s,transform 2s;
     }
 
  #grid-floats li:nth-child(n+2):nth-child(-n+14):hover {
-        width: 330px;
+        width: calc(25% + 1em);
+      
         transform: rotate(360deg);
     }
 
@@ -131,14 +134,15 @@ li {list-style-type: none;}
   
        }
 #grid-flex li:nth-child(1) {
-     width: 60%;
-     height: 60%x; 
+  
+     width: calc(50% - 1.5em);
+     height:430px; 
      transition: width 1s, height 1s;
     }
 
 #grid-flex li:nth-child(1):hover {
-        width: 60%;
-        height: 100%;
+       width: 60%;
+      height: 60%;
 
    
 
@@ -208,6 +212,7 @@ li {list-style-type: none;}
       #grid-flex li:nth-child(1) {
            width: calc(100% - 1em);
            border-width:2px;
+           border-radius:5px;
            border-color: #2196F3;
 
 
