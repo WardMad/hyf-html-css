@@ -35,7 +35,8 @@
 
     float:left;
     border:solid #009688;
-    border-width: 3px;
+    border-width: 2px;
+     border-style:groove;
     overflow:hidden;
 
 }
@@ -140,8 +141,9 @@ li {list-style-type: none;}
        }
  #grid-flex li:nth-child(1) {
   
-     width: calc(50% - 1.5em);
+     width: calc(45% - 1em);
      height:430px; 
+     vertical-align:text-top;
 
     }
 
@@ -238,6 +240,7 @@ li {list-style-type: none;}
            border-radius:5px;
            border-width:2px;
            font-family:monospace;
+           
     }
     
 }
