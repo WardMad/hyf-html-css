@@ -11,14 +11,14 @@
      text-align:center;
      clear: both;
      padding:20px;
-     transition: 2s;
+     transition: 1s;
        }
 
   h1:hover, h2:hover{
     
     background-color:#1e90ff87;
     color:whitesmoke;
-    font-size: 250%;
+    font-size:250%;
     font-family: monospace;
     letter-spacing: 10px;
 }
@@ -42,56 +42,55 @@
 li {list-style-type: none;}
 
 #grid-floats li:nth-child(1) {
-     width:580px;
-     height:425px;
-     font-size:22px; 
-     transition: width 2s, height 2s;
+     width:46%;
+     height:430px; 
+     transition: width 1s, height 1s;
     }
 
 #grid-floats li:nth-child(1):hover {
-    width: 650px;
-    height: 500px;
+    width: 60%;
+    height: 60%x;
 
    
 }
     
  #grid-floats li:nth-child(n+2):nth-child(-n+14){
-        width: 285px;
-        height:425px;
+        width: 31%;
+        height:430px;
         transition:width 2s,transform 2s;
     }
 
  #grid-floats li:nth-child(n+2):nth-child(-n+14):hover {
-         width: 330px;
+        width: 330px;
         transform: rotate(360deg);
     }
 
 
   img {
 
-    width:300px;
+    width:80%;
+   
    }
+
+   
 
 /* tablet mode */
  
-   @media screen and (max-width: 1200px)and (min-width: 850px) {
+   @media screen and (max-width: 1000px)and (min-width: 650px) {
       #grid-floats li:nth-child(1) {
-           width:430px;
+           width:47%;
          
-         
-  }
-
-}
-   @media screen and (max-width: 1200px)and (min-width: 830px) {
-      #grid-floats li:nth-child(2) {
-           width:430px !important; 
+        }
+   #grid-floats li:nth-child(2) {
+           width:47% !important; 
           
-           
-           
-    }
 }
+   }
+   
+           
 
-  @media screen and (max-width: 1200px)and (min-width: 830px) {
+
+  @media screen and (max-width: 1000px)and (min-width: 650px) {
      #grid-floats li:nth-child(n+1):nth-child(-n+14){
     
            border-color: coral;
@@ -101,20 +100,30 @@ li {list-style-type: none;}
 }
 
    
-/*    last-child fit in phone mode */
+/*     phone mode */
 
-  @media screen and (max-width: 800px) {
-      #grid-floats li:nth-child(14) {
-           width:580px !important; 
+ @media screen and (max-width: 650px) {
+      #grid-floats li:nth-child(1) {
+           width: calc(100% - 1em);
     
-           border-color: coral;
+           border-color: #795548;
 
-        
+/*         transition:none !important; */
     }
 }
-
  
-/* Flexbox */
+
+   @media screen and (max-width: 650px) {
+     #grid-floats li:nth-child(n+2):nth-child(-n+14){
+           width: calc(50% - 1em);
+           border-color: #795548;
+      
+           
+    }
+    
+}
+
+   /****** Flexbox *****************/
 
  section:nth-child(2) h2:nth-child(1):hover { 
       
@@ -122,15 +131,16 @@ li {list-style-type: none;}
   
        }
 #grid-flex li:nth-child(1) {
-     width:580px;
-     height:425px;
-     font-size:22px; 
-     transition: width 0.1s, height 0.1s;
+     width: 60%;
+     height: 60%x; 
+     transition: width 1s, height 1s;
     }
 
 #grid-flex li:nth-child(1):hover {
-    width: 650px;
-    height: 500px;
+        width: 60%;
+        height: 100%;
+
+   
 
    
 }
@@ -160,43 +170,57 @@ li {list-style-type: none;}
         
     }
 
-    /* tablet mode flex */
-  
-    @media screen and (max-width: 1200px)and (min-width: 850px) {
+/* tablet mode */
+ 
+   @media screen and (max-width: 1000px)and (min-width: 650px) {
       #grid-flex li:nth-child(1) {
-           width:430px;
-          
-
-           
-     
-    }
-}
-    @media screen and (max-width: 1200px)and (min-width: 830px) {
-      #grid-flex li:nth-child(2) {
-           width:430px !important; 
+           width:47%;
          
-
-        
-    }
+        }
+   #grid-flex li:nth-child(2) {
+           width:47% !important; 
+          
 }
+   }
+   
+           
 
-    @media screen and (max-width: 1200px)and (min-width: 830px) {
+
+  @media screen and (max-width: 1000px)and (min-width: 650px) {
      #grid-flex li:nth-child(n+1):nth-child(-n+14){
-        
-           border-color: #2196F3;
-           border-radius:10px;
     
-    }
+           border-color: coral;
+           border-radius:10px;
+     }
+      #grid-flex li:nth-child(n+3):nth-child(-n+14){
+    
+       width: calc(25% - 1em);
+           
+    
+      }
+
 }
 
-/*    last-child fit in phone mode */
-    @media screen and (max-width: 800px) {
-      #grid-flex li:nth-child(14) {
-           width:580px !important; 
+   
+/*     phone mode */
+
+ @media screen and (max-width: 650px) {
+      #grid-flex li:nth-child(1) {
+           width: calc(100% - 1em);
+           border-width:2px;
            border-color: #2196F3;
-        
+
+
     }
 }
+ 
 
-
-
+   @media screen and (max-width: 650px) {
+     #grid-flex li:nth-child(n+2):nth-child(-n+14){
+           width: calc(50% - 1em);
+           border-color: #2196F3;
+           border-radius:5px;
+           border-width:2px;
+    }
+    
+}
