@@ -2,7 +2,7 @@
     background-color:#f5f5f57d;
     box-sizing: border-box;
     margin:5px ;
-
+ 
     }
 
     
@@ -21,6 +21,7 @@
     font-size:250%;
     font-family: monospace;
     letter-spacing: 10px;
+    border-radius:5px;
 }
 
 
@@ -30,7 +31,7 @@
   h3{background-color:#d1f1f1;}
 
 
-.grid-item{
+#grid-floats .grid-item{
 
     float:left;
     border:solid #009688;
@@ -72,8 +73,10 @@ li {list-style-type: none;}
   img {
 
     width:80%;
-   
+   	display:inline-block;
    }
+   
+ 
 
    
 
@@ -110,7 +113,7 @@ li {list-style-type: none;}
            width: calc(100% - 1em);
     
            border-color: #795548;
-
+           font-family:monospace;
 /*         transition:none !important; */
     }
 }
@@ -120,57 +123,65 @@ li {list-style-type: none;}
      #grid-floats li:nth-child(n+2):nth-child(-n+14){
            width: calc(50% - 1em);
            border-color: #795548;
+           font-family:monospace;
       
            
     }
     
 }
 
-   /****** Flexbox *****************/
+   /****** ****Flexbox *****************/
+   /****** ****Flexbox *****************/
 
  section:nth-child(2) h2:nth-child(1):hover { 
       
     background-color:#FF5722;
   
        }
-#grid-flex li:nth-child(1) {
+ #grid-flex li:nth-child(1) {
   
      width: calc(50% - 1.5em);
      height:430px; 
-     transition: width 1s, height 1s;
+
     }
 
-#grid-flex li:nth-child(1):hover {
-       width: 60%;
-      height: 60%;
 
-   
 
-   
+
+#grid-flex .grid-item {
+      border-style:groove;
+      border-color:#D3D3D3;
+      transition: transform 0.4s;
+         
+
+}
+
+#grid-flex .grid-item:hover {
+    
+      transform: scale(1.2); 
+      cursor: pointer;
 }
 
   #grid-flex{
 
     display:flex;
     flex-wrap:wrap;
-/*     
-    border:solid #9E9E9E;
-    border-width: 2px;
-    margin:10px ; */
+
 }
 
+/*  #grid-flex img:nth-child(1){
+    width:10%;
+    background-color:aqua
+  } */
 
-  #grid-flex li:nth-child(1){
-     width:580px;
-     height:425px;
-     font-size:22px; 
-    
-    }
+
+  
     
 
   #grid-flex li:nth-child(n+2):nth-child(-n+14){
-        width:285px;
-        height:425px;
+         width: calc(25% - 1em);
+        height:430px;
+        transition:width 2s,transform 2s;
         
     }
 
@@ -226,6 +237,7 @@ li {list-style-type: none;}
            border-color: #2196F3;
            border-radius:5px;
            border-width:2px;
+           font-family:monospace;
     }
     
 }
