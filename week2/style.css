@@ -4,7 +4,12 @@
     margin:5px ;
  
     }
+main {
+  display:inline-block;
+  border-style:groove;
+  border-radius:5px;
 
+}
     
   h1, h2{ 
       
@@ -141,9 +146,9 @@ li {list-style-type: none;}
        }
  #grid-flex li:nth-child(1) {
   
-     width: calc(45% - 1em);
+     width: calc(50% - 1.5em);
      height:430px; 
-     vertical-align:text-top;
+     overflow:auto;
 
     }
 
