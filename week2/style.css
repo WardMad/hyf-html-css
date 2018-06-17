@@ -46,6 +46,10 @@ main {
 
 }
 
+ li:first-child > img{
+
+  width:65%;
+}
 
 li {list-style-type: none;}
 
