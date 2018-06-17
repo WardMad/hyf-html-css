@@ -83,7 +83,7 @@ li {list-style-type: none;}
   img {
 
     width:80%;
-   	display:inline-block;
+   
    }
    
  
@@ -152,8 +152,7 @@ li {list-style-type: none;}
   
      width: calc(50% - 1.5em);
      height:430px; 
-     overflow:auto;
-
+     transition: transform 0.4s;  
     }
 
 
@@ -162,8 +161,8 @@ li {list-style-type: none;}
 #grid-flex .grid-item {
       border-style:groove;
       border-color:#D3D3D3;
-      transition: transform 0.4s;
-         
+     
+     
 
 }
 
@@ -193,7 +192,7 @@ li {list-style-type: none;}
          width: calc(25% - 1em);
         height:430px;
         transition:width 2s,transform 2s;
-        
+         transition: transform 0.4s;
     }
 
 /* tablet mode */
