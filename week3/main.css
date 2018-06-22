@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+#logo {
+    margin-left: 50%;
+}
+
+nav ul {
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 55px;
+    overflow: hidden;
+    background-color: #01689b;
+}
+
+nav li {
+    float: right;
+    font-size: 1.3em;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #034769;
+}
+
+nav span {
+    float: left;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.background {
+    background-image: url(https://static.mijnwebwinkel.nl/winkel/stroomterug/images/IMG-20170829-WA0009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+
+
+/* 
+Tasks left */
+
+.top-task {
+    background: white;
+    color: #01689b;
+    margin: 50px 50px;
+}
+
+.top-task li {
+    font-weight: bold;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+
+/* search */
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #fcf6f6;
+}
+
+form.example button {
+    padding: 11px;
+    background: #141415;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+
+/* section 2 */
+
+section:nth-child(2) {
+    background-color: #f3f3f3;
+}
+
+.paragraphs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.content h2 {
+    color: #01689b;
+}
+
+
+/* image-topics */
+
+.image-topics {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.image-topics div {
+    overflow: hidden;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: normal;
+    color: #01689b;
+}
+
+h3:hover {
+    text-decoration: underline;
+    color: #154273;
+}
+
+.line-separator {
+    margin: 30px 50px;
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 0 20px 0;
+}
+
+.news div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    cursor: pointer;
+}
+
+section:nth-child(4) h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 0.4rem;
+    margin: 10px 50px;
+}
+
+
+/* *******FOOTER******
+ */
+
+#footer {
+    display: flex;
+    background-color: #01689b;
+}
+
+#footer li {
+    list-style-type: none;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 4px 0 4px 0;
+    cursor: pointer;
+}
+
+#footer h2 {
+    font-size: 1.5em;
+    margin-left: 40px;
+    color: #fff;
+    font-family: monospace;
+}
+
+#footer h3 {
+    color: #fff;
+    font-family: Pussycat, Algerian, Broadway, fantasy;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.languages {
+    padding: 20px;
+}
+
+.languages p {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #b2d7ee;
+    color: #007bc7;
+    margin: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    float: left;
+}
+
+.languages p:first-child {
+    color: black;
+    border-style: hidden;
+}
+
+
+/* **************Responsive************ */
+
+@media (max-width: 480px) {
+    .top-task li {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .example input[type=text] {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 480px)and (max-width: 768px) {
+    .background {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .example input[type=text] {
+        width: 50%;
+    }
+    example button {
+        width: 20%;
+    }
+    .top-task {
+        width: 40%;
+    }
+    .content {
+        width: 50%;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .image-topics div {
+        width: 45%;
+    }
+    .news div {
+        width: 50%;
+    }
+    #footer h3 {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-task {
+        width: 40%;
+    }
+    .background {
+        height: 400px;
+    }
+    .example input[type=text] {}
+    example button {
+        width: 20%;
+    }
+    .top-task {
+        width: 40%;
+    }
+    form {
+        float: right;
+        padding: 50px;
+    }
+    .content {
+        width: 25%;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .image-topics div {
+        width: 31%;
+    }
+    .news div {
+        width: 33%;
+    }
+    #footer {
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+    }
+}
